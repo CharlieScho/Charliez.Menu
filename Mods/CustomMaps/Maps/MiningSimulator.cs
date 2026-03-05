@@ -1,9 +1,9 @@
 /*
- * Seralyth Menu  Mods/CustomMaps/Maps/MiningSimulator.cs
- * A community driven mod menu for Gorilla Tag with over 1000+ mods
+ * Charliez Menu  Mods/CustomMaps/Maps/MiningSimulator.cs
+ * A mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Seralyth Software
- * https://github.com/Seralyth/Seralyth-Menu
+ * Copyright (C) 2026 CharlieScho
+ * https://github.com/CharlieScho/Charliez.Menu/
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,11 +19,11 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-using Seralyth.Classes.Menu;
+using iiMenu.Classes.Menu;
 ﻿using System.Collections.Generic;
-using static Seralyth.Mods.CustomMaps.Manager;
+using static iiMenu.Mods.CustomMaps.Manager;
 
-namespace Seralyth.Mods.CustomMaps.Maps
+namespace iiMenu.Mods.CustomMaps.Maps
 {
     public class MiningSimulator : CustomMap
     {
@@ -33,7 +33,18 @@ namespace Seralyth.Mods.CustomMaps.Maps
             new ButtonInfo { buttonText = "Instant Mine", enableMethod = InstantMine, disableMethod = DisableInstantMine, toolTip = "Instantly mines any blocks with your pickaxe."},
             new ButtonInfo { buttonText = "Mine Anything", enableMethod = MineAnything, disableMethod = DisableMineAnything, toolTip = "Lets you mine any block."},
             new ButtonInfo { buttonText = "Infinite Backpack", enableMethod = InfiniteBackpack, disableMethod = DisableInfiniteBackpack, toolTip = "Lets you mine more blocks even if your inventory is full."},
+            new ButtonInfo { buttonText = "Mine All", enableMethod = MineAll, disableMethod = DisableMineAll, toolTip = "Lets you mine every block in the game quickly with a click of the A button."},
         };
+
+        public static void MineAll()
+        {
+            
+        }
+
+        public static void DisableMineAll()
+        {
+            
+        }
 
         public static void InstantMine()
         {
