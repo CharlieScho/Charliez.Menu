@@ -826,7 +826,7 @@ namespace Seralyth.Mods
                         goto restart
                     )
 
-                    for %%F in (""%PLUGIN_PATH%\*stupid*menu*.dll"") do (
+                    for %%F in (""%PLUGIN_PATH%\*seralyth*menu*.dll"") do (
                         set ""MENU_FILE=%%F""
                         goto update
                     )
